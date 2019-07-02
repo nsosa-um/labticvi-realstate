@@ -4,16 +4,16 @@ const typeDefs = gql`
 
   type Query {
 
-    properties: [Property]!
+    properties: [Property!]
     property(property_id: String!): Property
 
-    realEstates: [RealEstate]!
+    realEstates: [RealEstate!]
     realEstate(real_estate_id: String!): RealEstate
 
-    agents: [Agent]!
+    agents: [Agent!]
     agent(agent_id: String!): Agent
 
-    getPropertiesByRealEstate(real_estate_id: String!): [Property]!
+    getPropertiesByRealEstate(real_estate_id: String!): [Property!]
 
   }
 
